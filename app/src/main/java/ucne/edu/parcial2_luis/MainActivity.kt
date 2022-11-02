@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import coil.compose.AsyncImage
 import dagger.hilt.android.AndroidEntryPoint
 //import ucne.edu.apiarticulosap2.ui.Navigation.Navegacion
 import ucne.edu.parcial2_luis.ui.theme.Parcial2_LuisTheme
@@ -25,7 +26,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+
+                    AsyncImage(
+                        model = "https://example.com/image.jpg",
+                        contentDescription = null
+                    )
                 }
             }
         }
