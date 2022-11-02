@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import dagger.hilt.android.AndroidEntryPoint
-import ucne.edu.apiarticulosap2.ui.Navigation.Navegacion
+//import ucne.edu.apiarticulosap2.ui.Navigation.Navegacion
 import ucne.edu.parcial2_luis.ui.theme.Parcial2_LuisTheme
 
 @AndroidEntryPoint
@@ -25,11 +25,28 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                   Navegacion()
+                    Greeting("Android")
                 }
             }
         }
     }
 }
+/*implementation("io.coil-kt:coil-compose:2.2.2")
 
+AsyncImage(
+model = "https://example.com/image.jpg",
+contentDescription = null
+)*/
 
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name!")
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    Parcial2_LuisTheme {
+        Greeting("Android")
+    }
+}
