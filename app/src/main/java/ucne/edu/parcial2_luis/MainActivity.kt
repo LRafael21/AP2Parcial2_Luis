@@ -27,31 +27,17 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
 
-                    AsyncImage(
-                        model = "https://example.com/image.jpg",
-                        contentDescription = null
-                    )
                 }
             }
         }
     }
 }
-/*implementation("io.coil-kt:coil-compose:2.2.2")
 
-AsyncImage(
-model = "https://example.com/image.jpg",
-contentDescription = null
-)*/
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     Parcial2_LuisTheme {
-        Greeting("Android")
+
     }
 }
