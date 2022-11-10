@@ -8,6 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import ucne.edu.parcial2_luis.data.remote.VerbosApi
 import javax.inject.Singleton
 
 
@@ -26,7 +27,7 @@ object AppModule {
             .build()
     }
 
-   /* @Singleton
+    @Singleton
     @Provides
     fun provideVerbosApi(moshi: Moshi): VerbosApi
     {
@@ -36,5 +37,5 @@ object AppModule {
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
             .create(VerbosApi::class.java)
-    }*/
+    }
 }
