@@ -61,9 +61,9 @@ fun VerbosRow(verbos: VerbosDTO)
 
     Column(modifier = Modifier.fillMaxSize()) {
 
-        Text(text = "Verbos" + verbos.Verbo)
-        Text(text = "Categoria" + verbos.Categoria)
-        Text(text = "Nivel" + verbos.Nivel)
+        Text(text = "Verbos: " + verbos.Verbo)
+        Text(text = "Categoria: " + verbos.Categoria)
+        Text(text = "Nivel: " + verbos.Nivel)
         AsyncImage(model = verbos.Imagen, contentDescription = null)
 
     }
